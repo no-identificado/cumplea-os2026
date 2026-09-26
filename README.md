@@ -33,13 +33,13 @@ No hace falta tocar HTML ni CSS.
 Abre `config.js` y edita:
 
 ```js
-friendName: "[NOMBRE DE ELLA]",
+friendName: "Melisa",
 ```
 
 ## Cómo cambiar mi nombre
 
 ```js
-creatorName: "[MI NOMBRE]",
+creatorName: "yo xd",
 ```
 
 ## Cómo cambiar la contraseña
