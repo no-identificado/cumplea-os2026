@@ -10,7 +10,7 @@ const SITE_CONFIG = {
   creatorName: "yo xd",
 
   // --- Fechas ---
-  friendshipStartYear: "2021, Agosto",  
+  friendshipStartYear: "2021",  
   currentYear: 2026,
 
   // --- Acceso ---
