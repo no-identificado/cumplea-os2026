@@ -55,24 +55,24 @@ const THEME_CONFIG = {
 const MANUAL_CONFIG = {
   funciones: [
     { icono: "👂", texto: "Escuchar" },
-    { icono: "😂", texto: "Hacer reír" },
+    { icono: "😂", texto: "Hacer reír, aunque no le hago saber" },
     { icono: "🗂️", texto: "Guardar recuerdos" },
     { icono: "🤍", texto: "Estar ahí" },
-    { icono: "🙈", texto: "Aguantar mis tonterías" },
-    { icono: "✨", texto: "Convertir momentos normales en recuerdos" }
+    { icono: "🙈", texto: "Aguantar mis tonterías, ya que me pongo muy espeso a veces" },
+    { icono: "✨", texto: "Convertir momentos normales en recuerdos y apoyar de alguna manera a olvidar cosas" }
   ],
   advertencias: [
     "Puede provocar ataques repentinos de risa.",
-    "Se recomienda suministrar memes regularmente.",
-    "No debe dejarse sin chisme durante períodos prolongados.",
-    "El usuario puede desarrollar dependencia emocional después de aproximadamente 5 años de uso."
+    "Se recomienda molestarla regularmente.",
+    "No debe dejarse sin chisme durante períodos prolongados o sino se resiente .",
+    "El usuario puede desarrollar dependencia emocional después de aproximadamente 5 años de uso o tal vez no."
   ],
   mantenimiento: [
     { frecuencia: "Diario", tarea: "Pensar \"tengo que contarle esto\"" },
     { frecuencia: "Semanal", tarea: "Conversación innecesaria de varias horas" },
     { frecuencia: "Mensual", tarea: "Actualización de chismes" },
-    { frecuencia: "Anual", tarea: "Recordar que seguimos siendo amigos" },
-    { frecuencia: "Cada 5 años", tarea: "Hacer un regalo demasiado sentimental" }
+    { frecuencia: "Anual", tarea: "Recordar que seguimos siendo amigos, ya que se desaparece por momentos xd" },
+    { frecuencia: "Cada 5 años", tarea: "Intenar hacer un regalo que supere el que te va a dar" }
   ]
 };
 
