@@ -20,8 +20,7 @@ const SITE_CONFIG = {
   backgroundImage: "assets/images/background.jpg",
 
   // --- Playlist ---
-  playlistUrl: <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2fEdRSoQgORKQcT3Mlh32p?utm_source=generator&theme=0&si=64950a5539f54c52" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
-
+  playlistUrl: "https://open.spotify.com/playlist/2fEdRSoQgORKQcT3Mlh32p",
   // --- Cápsula futura ---
   capsuleUnlockDate: "2027-09-25T00:00:00",
 
