@@ -85,13 +85,13 @@ const TIMELINE_CONFIG = [
     year: "2021",
     title: "El comienzo",
     description: "la verdad que si me diste algo de miedo cuando de la nada me habías escrito",
-    image: "assets/images/2021.jpg"
+    image: "assets/images/2021.jpeg"
   },
   {
     year: "2022",
     title: "cuando eras AR chiquita",
     description: "En estos años me acuerdo que te ayudaba constantemente a matar algunos enemigos y a explorar ya que no podíasxd.",
-    image: "assets/images/2022.jpg"
+    image: "assets/images/2022.jpeg"
   },
   {
     year: "2023",
