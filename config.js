@@ -6,11 +6,11 @@
 
 const SITE_CONFIG = {
   // --- Personas ---
-  friendName: "[NOMBRE DE ELLA]",
-  creatorName: "[MI NOMBRE]",
+  friendName: "Melisa (no me sé tu apellido xd)",
+  creatorName: "yo xd",
 
   // --- Fechas ---
-  friendshipStartYear: 2021,
+  friendshipStartYear: 2021, creo 
   currentYear: 2026,
 
   // --- Acceso ---
