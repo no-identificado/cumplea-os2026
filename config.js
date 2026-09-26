@@ -10,7 +10,7 @@ const SITE_CONFIG = {
   creatorName: "yo xd",
 
   // --- Fechas ---
-  friendshipStartYear: 2021, creo 
+  friendshipStartYear: "2021, Agosto",  
   currentYear: 2026,
 
   // --- Acceso ---
@@ -20,7 +20,7 @@ const SITE_CONFIG = {
   backgroundImage: "assets/images/background.jpg",
 
   // --- Playlist ---
-  playlistUrl: "PEGAR_AQUI_EL_ENLACE_DE_LA_PLAYLIST",
+  playlistUrl: <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2fEdRSoQgORKQcT3Mlh32p?utm_source=generator&theme=0&si=64950a5539f54c52" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
 
   // --- Cápsula futura ---
   capsuleUnlockDate: "2027-09-25T00:00:00",
