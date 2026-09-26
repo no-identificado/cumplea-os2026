@@ -28,7 +28,7 @@ const SITE_CONFIG = {
   // --- Textos personalizables largos ---
   portadaSubtitulo: "Una pequeña colección de recuerdos de una amistad que empezó en 2021.",
   cartaTexto: [
-    "[AQUÍ VA LA CARTA PERSONAL]"
+    "y pensar que todo comenzó cuando me escribiste para ayudarte con tu cuenta, a veces me imagino que hubiera pasado si no te contestaba, felizmente respondí ese mensaje y pude conectar con una persona tan maravollosa como tú, como una vez me dijeron: la vida a veces te recompenza con personas que te ayudan a cambiar y ver de otra manera la vida, por eso muchas gracias por esta linda amistad que creo que ya va un poco más de 5 años, en fin espero que esto dure para más y sigamos siendo grandes amigos"
   ],
   cierreMensaje: "[AQUÍ VA EL MENSAJE FINAL]",
   readmeMensajeFinal: "[MENSAJE FINAL PERSONALIZABLE]"
