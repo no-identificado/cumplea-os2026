@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 años.</title>
+<meta name="description" content="Un pequeño archivo digital de una amistad.">
+
+<!-- Tipografías: display serif elegante + sans limpia para lectura -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- 1. PANTALLA DE ACCESO -->
+<!-- ============================================ -->
+<section id="pantalla-acceso" class="pantalla activa">
+  <div class="acceso-fondo"></div>
+  <div class="acceso-contenido">
+    <p class="acceso-preludio">Antes de entrar...<br>hay algo que necesitas recordar.</p>
+    <p class="acceso-instruccion">Introduce la contraseña para continuar.</p>
+    <form id="form-acceso" class="acceso-form" autocomplete="off">
+      <input type="password" id="input-password" class="acceso-input" placeholder="•••••" inputmode="numeric" aria-label="Contraseña">
+      <button type="submit" class="boton boton-primario">Entrar</button>
+    </form>
+    <p id="acceso-error" class="acceso-error" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- CONTENEDOR PRINCIPAL (oculto hasta desbloquear) -->
+<!-- ============================================ -->
+<div id="sitio" class="sitio oculto">
+
+  <!-- Fondo global personalizable -->
+  <div class="fondo-global" id="fondo-global"></div>
+  <div class="overlay-global" id="overlay-global"></div>
+  <div class="particulas" id="particulas" aria-hidden="true"></div>
+
+  <!-- navegación de progreso -->
+  <nav class="nav-progreso" id="nav-progreso" aria-label="Progreso del recorrido">
+    <div class="nav-progreso-barra"><div class="nav-progreso-relleno" id="nav-progreso-relleno"></div></div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- 2. PORTADA -->
+  <!-- ============================================ -->
+  <section id="portada" class="capitulo" data-capitulo="portada">
+    <div class="portada-estrellas" aria-hidden="true"></div>
+    <div class="capitulo-contenido portada-contenido">
+      <h1 class="portada-titulo">5 años.</h1>
+      <p class="portada-subtitulo" id="portada-subtitulo">Una pequeña colección de recuerdos de una amistad que empezó en 2021.</p>
+      <button class="boton boton-primario" id="boton-comenzar">Comenzar</button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 3. MANUAL DE USO -->
+  <!-- ============================================ -->
+  <section id="manual" class="capitulo" data-capitulo="manual">
+    <div class="capitulo-contenido">
+      <p class="capitulo-eyebrow">Manual de uso</p>
+      <h2 class="capitulo-titulo" id="manual-titulo">Manual de uso — [NOMBRE]</h2>
+
+      <div class="manual-ficha">
+        <div class="manual-ficha-fila"><span>Modelo</span><span>Amiga edición 2021</span></div>
+        <div class="manual-ficha-fila"><span>Antigüedad</span><span id="manual-antiguedad">5 años</span></div>
+        <div class="manual-ficha-fila"><span>Estado</span><span>Sorprendentemente funcional</span></div>
+        <div class="manual-ficha-fila"><span>Mantenimiento</span><span>Conversaciones ocasionales + chismes</span></div>
+        <div class="manual-ficha-fila"><span>Combustible</span><span>Comida, memes y paciencia</span></div>
+        <div class="manual-ficha-fila"><span>Compatibilidad</span><span id="manual-compatibilidad">[MI NOMBRE]</span></div>
+        <div class="manual-ficha-fila"><span>Garantía</span><span>5 años y contando</span></div>
+        <div class="manual-ficha-fila"><span>Última actualización</span><span id="manual-actualizacion">2026</span></div>
+      </div>
+
+      <h3 class="manual-subtitulo">Funciones principales</h3>
+      <div class="manual-grid" id="manual-funciones"></div>
+
+      <h3 class="manual-subtitulo">Advertencias de uso</h3>
+      <ul class="manual-lista" id="manual-advertencias"></ul>
+
+      <h3 class="manual-subtitulo">Mantenimiento recomendado</h3>
+      <div class="manual-tabla" id="manual-mantenimiento"></div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 4. LÍNEA TEMPORAL -->
+  <!-- ============================================ -->
+  <section id="timeline" class="capitulo" data-capitulo="timeline">
+    <div class="capitulo-contenido capitulo-contenido-ancho">
+      <p class="capitulo-eyebrow">Nuestra historia</p>
+      <h2 class="capitulo-titulo">Nuestra historia</h2>
+      <div class="timeline-anios" id="timeline-anios" role="tablist" aria-label="Años"></div>
+      <div class="timeline-tarjetas" id="timeline-tarjetas"></div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 5. CÁPSULA DE 5 AÑOS (recuerdos preparados) -->
+  <!-- ============================================ -->
+  <section id="capsula5" class="capitulo" data-capitulo="capsula5">
+    <div class="capitulo-contenido">
+      <p class="capitulo-eyebrow">Cápsula de 5 años</p>
+      <h2 class="capitulo-titulo">Cápsula de 5 años</h2>
+      <p class="capitulo-intro">Cinco recuerdos que dejé preparados para ti. Ábrelos con calma.</p>
+      <div class="sobres-grid" id="sobres-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 6. PLAYLIST -->
+  <!-- ============================================ -->
+  <section id="playlist" class="capitulo" data-capitulo="playlist">
+    <div class="capitulo-contenido">
+      <p class="capitulo-eyebrow">Banda sonora</p>
+      <h2 class="capitulo-titulo">Banda sonora de nuestra amistad</h2>
+      <a href="#" target="_blank" rel="noopener" class="boton boton-primario" id="boton-playlist">Escuchar nuestra banda sonora 🎧</a>
+      <div class="playlist-canciones" id="playlist-canciones"></div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 7. CARTA -->
+  <!-- ============================================ -->
+  <section id="carta" class="capitulo capitulo-carta" data-capitulo="carta">
+    <div class="carta-papel">
+      <p class="capitulo-eyebrow">Para ti</p>
+      <div class="carta-texto" id="carta-texto">
+        <p>[AQUÍ VA LA CARTA PERSONAL]</p>
+      </div>
+      <p class="carta-firma" id="carta-firma">— [MI NOMBRE]</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 8. CÁPSULA FUTURA (única) -->
+  <!-- ============================================ -->
+  <section id="capsula-futura" class="capitulo" data-capitulo="capsula-futura">
+    <div class="capitulo-contenido">
+      <p class="capitulo-eyebrow">No abrir todavía</p>
+      <h2 class="capitulo-titulo">No abrir todavía</h2>
+      <p class="capitulo-intro">Esta cápsula pertenece a nuestro próximo capítulo.</p>
+
+      <div class="capsula-caja" id="capsula-caja">
+        <div class="capsula-caja-icono" id="capsula-caja-icono">🔒</div>
+        <p class="capsula-caja-mensaje" id="capsula-caja-mensaje">Todavía no.</p>
+        <p class="capsula-caja-fecha" id="capsula-caja-fecha">Esta cápsula se abrirá el 25 de septiembre de 2027.</p>
+
+        <div class="contador" id="contador" aria-live="polite">
+          <div class="contador-unidad"><span id="contador-dias">00</span><small>días</small></div>
+          <div class="contador-unidad"><span id="contador-horas">00</span><small>horas</small></div>
+          <div class="contador-unidad"><span id="contador-minutos">00</span><small>min</small></div>
+          <div class="contador-unidad"><span id="contador-segundos">00</span><small>seg</small></div>
+        </div>
+
+        <button class="boton boton-primario" id="boton-abrir-capsula" disabled>🔓 Abrir cápsula</button>
+      </div>
+
+      <!-- Interior de la cápsula, oculto hasta el desbloqueo -->
+      <div class="capsula-interior oculto" id="capsula-interior">
+        <p class="capsula-contador-recuerdos" id="capsula-contador-recuerdos">0 recuerdos guardados</p>
+
+        <div class="capsula-acciones">
+          <button class="boton boton-secundario" id="boton-anadir-archivo">+ Añadir a la cápsula</button>
+          <button class="boton boton-secundario" id="boton-anadir-mensaje">+ Escribir un mensaje</button>
+        </div>
+
+        <div class="capsula-columnas" id="capsula-columnas">
+          <div class="capsula-columna">
+            <h3 id="titulo-recuerdos-mio">Recuerdos de [MI NOMBRE]</h3>
+            <div class="capsula-lista" id="lista-recuerdos-mio"></div>
+          </div>
+          <div class="capsula-columna">
+            <h3 id="titulo-recuerdos-ella">Recuerdos de [NOMBRE DE ELLA]</h3>
+            <div class="capsula-lista" id="lista-recuerdos-ella"></div>
+          </div>
+          <div class="capsula-columna">
+            <h3>Mensajes</h3>
+            <div class="capsula-lista" id="lista-mensajes"></div>
+          </div>
+        </div>
+
+        <div class="capsula-exportar">
+          <button class="boton boton-primario" id="boton-guardar-capsula">📦 Guardar nuestra cápsula</button>
+          <button class="boton boton-secundario" id="boton-exportar-respaldo">💾 Exportar respaldo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 9. CIERRE -->
+  <!-- ============================================ -->
+  <section id="cierre" class="capitulo" data-capitulo="cierre">
+    <div class="capitulo-contenido">
+      <h2 class="cierre-titulo">5 años.</h2>
+      <p class="cierre-texto">Y esto todavía no termina aquí.</p>
+      <p class="cierre-fecha">Próxima actualización: 25.09.2027</p>
+      <p class="cierre-mensaje" id="cierre-mensaje">[AQUÍ VA EL MENSAJE FINAL]</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============================================ -->
+<!-- MODALES -->
+<!-- ============================================ -->
+
+<!-- Modal: imagen de la línea temporal en grande -->
+<div class="modal oculto" id="modal-imagen">
+  <div class="modal-fondo" data-cerrar-modal></div>
+  <div class="modal-caja modal-imagen-caja">
+    <button class="modal-cerrar" data-cerrar-modal aria-label="Cerrar">✕</button>
+    <img id="modal-imagen-img" src="" alt="">
+  </div>
+</div>
+
+<!-- Modal: sobre de la cápsula de 5 años -->
+<div class="modal oculto" id="modal-sobre">
+  <div class="modal-fondo" data-cerrar-modal></div>
+  <div class="modal-caja modal-sobre-caja">
+    <button class="modal-cerrar" data-cerrar-modal aria-label="Cerrar">✕</button>
+    <p class="modal-sobre-numero" id="modal-sobre-numero">01</p>
+    <h3 class="modal-sobre-titulo" id="modal-sobre-titulo"></h3>
+    <p class="modal-sobre-fecha" id="modal-sobre-fecha"></p>
+    <p class="modal-sobre-descripcion" id="modal-sobre-descripcion"></p>
+    <p class="modal-sobre-frase" id="modal-sobre-frase"></p>
+  </div>
+</div>
+
+<!-- Modal: añadir archivo a la cápsula futura -->
+<div class="modal oculto" id="modal-archivo">
+  <div class="modal-fondo" data-cerrar-modal></div>
+  <div class="modal-caja">
+    <button class="modal-cerrar" data-cerrar-modal aria-label="Cerrar">✕</button>
+    <h3>Añadir a la cápsula</h3>
+    <form id="form-archivo" class="formulario">
+      <label>¿Quién está guardando este recuerdo?
+        <select id="archivo-autor" required></select>
+      </label>
+      <label>Título
+        <input type="text" id="archivo-titulo" required maxlength="80">
+      </label>
+      <label>Descripción
+        <textarea id="archivo-descripcion" rows="3" maxlength="400"></textarea>
+      </label>
+      <label>Archivo
+        <input type="file" id="archivo-input" required>
+      </label>
+      <button type="submit" class="boton boton-primario">Guardar</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal: escribir mensaje -->
+<div class="modal oculto" id="modal-mensaje">
+  <div class="modal-fondo" data-cerrar-modal></div>
+  <div class="modal-caja">
+    <button class="modal-cerrar" data-cerrar-modal aria-label="Cerrar">✕</button>
+    <h3>Escribir un mensaje</h3>
+    <form id="form-mensaje" class="formulario">
+      <label>Autor
+        <select id="mensaje-autor" required></select>
+      </label>
+      <label>Título
+        <input type="text" id="mensaje-titulo" required maxlength="80" placeholder="Para mi yo del futuro">
+      </label>
+      <label>Mensaje
+        <textarea id="mensaje-texto" rows="6" required maxlength="2000"></textarea>
+      </label>
+      <button type="submit" class="boton boton-primario">Guardar</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal: ver recuerdo guardado (archivo o mensaje) -->
+<div class="modal oculto" id="modal-recuerdo">
+  <div class="modal-fondo" data-cerrar-modal></div>
+  <div class="modal-caja">
+    <button class="modal-cerrar" data-cerrar-modal aria-label="Cerrar">✕</button>
+    <div id="modal-recuerdo-contenido"></div>
+  </div>
+</div>
+
+<!-- Modal: confirmar exportación -->
+<div class="modal oculto" id="modal-exportar">
+  <div class="modal-fondo" data-cerrar-modal></div>
+  <div class="modal-caja">
+    <button class="modal-cerrar" data-cerrar-modal aria-label="Cerrar">✕</button>
+    <h3 id="exportar-titulo">Has guardado X recuerdos.</h3>
+    <p>¿Quieres convertir nuestra cápsula en un archivo?</p>
+    <div class="modal-acciones">
+      <button class="boton boton-primario" id="boton-confirmar-exportar">Sí, guardar cápsula</button>
+      <button class="boton boton-secundario" id="boton-cancelar-exportar">Volver</button>
+    </div>
+    <div class="exportar-progreso oculto" id="exportar-progreso">
+      <p>Empaquetando nuestros recuerdos…</p>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- Librería para exportar la cápsula como ZIP (solo se usa dentro del navegador) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="config.js"></script>
+<script src="capsule-db.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
