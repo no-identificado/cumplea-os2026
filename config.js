@@ -14,7 +14,7 @@ const SITE_CONFIG = {
   currentYear: 2026,
 
   // --- Acceso ---
-  password: "0",
+  password: "",
 
   // --- Fondo e imagen ---
   backgroundImage: "assets/images/background.jpg",
