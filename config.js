@@ -85,37 +85,37 @@ const TIMELINE_CONFIG = [
   {
     year: "2021",
     title: "El comienzo",
-    description: "Escribe aquí cómo empezó todo.",
+    description: "la verdad que si me diste algo de miedo cuando de la nada me habías escrito",
     image: "assets/images/2021.jpg"
   },
   {
     year: "2022",
-    title: "Título del recuerdo",
-    description: "Escribe aquí qué pasó ese año.",
+    title: "cuando eras AR chiquita",
+    description: "En estos años me acuerdo que te ayudaba constantemente a matar algunos enemigos y a explorar ya que no podíasxd.",
     image: "assets/images/2022.jpg"
   },
   {
     year: "2023",
-    title: "Título del recuerdo",
-    description: "Escribe aquí qué pasó ese año.",
+    title: "Desaparecido",
+    description: "Me acuerdo que en este año no sé por qué nos habíamos dejado de hablar durante varios meses.",
     image: "assets/images/2023.jpg"
   },
   {
     year: "2024",
-    title: "Título del recuerdo",
-    description: "Escribe aquí qué pasó ese año.",
+    title: "reencuentro",
+    description: "En este año habíamos vuelto a hablar y te había contado que ingresé a SM",
     image: "assets/images/2024.jpg"
   },
   {
     year: "2025",
-    title: "Título del recuerdo",
-    description: "Escribe aquí qué pasó ese año.",
+    title: "año normal",
+    description: "No me acuerdo si en este año pasó algo memorable, si pasó algo espero que me hagas acordar.",
     image: "assets/images/2025.jpg"
   },
   {
     year: "2026",
     title: "Hoy",
-    description: "Escribe aquí dónde estamos ahora.",
+    description: "Aún sigo sufriendo en hacerte regalos, no sé como llegar a ganarte, creo que no lo voy a lograr este año, pero por lo menos lo intenté.",
     image: "assets/images/2026.jpg"
   }
 ];
